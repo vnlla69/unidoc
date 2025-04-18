@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management System</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/unidoccs 1.png" alt="unidoccs1"></div>
+        <div class="auth-section">
+            <a href="userpage.html" class="auth-btn">Go to Dashboard</a>
+        </div>
+    </header>
+    
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fa-solid fa-bars toggle-btn"></i>
+            <div>
+                <img src="./images/unidoccs-index.png" alt="unidoccs-logo"> 
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="./landing.html"><span class="icon active"><i class="fa-solid fa-home"></i></span><span class="text active">Home</span></a></li>
+            <li><a href="./about.html"><span class="icon active"><i class="fa-solid fa-circle-info"></i></span><span class="text active">About</span></a></li>
+            <li><a href=""><span class="icon active"><i class="fa-solid fa-file"></i></span><span class="text active">Docs</span></a></li>
+            <li><a href=""><span class="icon active"><i class="fa-solid fa-circle-question"></i></span><span class="text active">Help</span></a></li>
+        </ul>
+    </div>
+    
+    <main>
+        <section class="user-info">
+            <h3>Welcome to UNIDOCCS, your Credentials and Documents are on the Blockchain!</h3>
+            <div class="id-card">
+                <div class="id-header">
+                    <div class="id-title">User Identification</div>
+                    <div class="id-logo">UNIDOCCS</div>
+                </div>
+                <div class="id-content">
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">John Doe</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Address:</span>
+                            <span class="info-value">123 Blockchain Street</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Course:</span>
+                            <span class="info-value">Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Student ID:</span>
+                            <span class="info-value">CS12345</span>
+                        </div>
+                    </div>
+                    <div class="id-photo">
+                        <img src="./images/profile-placeholder.png" alt="Student Photo">
+                    </div>
+                </div>
+                <div class="id-footer">
+                    <div class="blockchain-id">Public Address: 0x71C7656EC7ab88b098defB751B7401B5f6d8976F</div>
+                    <div class="expiry">Created: 04/15/2025</div>
+                </div>
+            </div>
+            <p class="id-notice">Your digital identity is securely stored on the blockchain.</p>
+        </section>
+        
+        <section class="documents-section">
+            <h2>Credentials and Documents
+                <section class="search-section">
+                    <input type="text" class="search-box" placeholder="search">
+                </section>
+            </h2>
+            
+            <div class="document-card">
+                <h4>Document 1</h4>
+                <p>This is a sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc123456</span>
+                </div>
+            </div>
+            <div class="document-card">
+                <h4>Document 2</h4>
+                <p>Another sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc789012</span>
+                </div>
+            </div>
+            <div class="document-card">
+                <h4>Document 3</h4>
+                <p>Another sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc345678</span>
+                </div>
+            </div>
+            <div class="document-card">
+                <h4>Document 4</h4>
+                <p>Another sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc901234</span>
+                </div>
+            </div>
+            <div class="document-card">
+                <h4>Document 5</h4>
+                <p>Another sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc567890</span>
+                </div>
+            </div>
+            <div class="document-card">
+                <h4>Document 6</h4>
+                <p>Another sample document result</p>
+                <div class="document-meta">
+                    <span>Type: PDF</span> |
+                    <span>Uploaded: 04/15/2025</span> |
+                    <span>Blockchain ID: bc123890</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 UNIDOCCS - All rights reserved. UwU </p>
+    </footer>
+
+<script>
+    // collapsible navbar
+    var toggleBtn = document.querySelector(".toggle-btn");
+    var sidebar = document.querySelector(".sidebar");
+    toggleBtn.addEventListener("click", function() {
+        sidebar.classList.toggle("collapsed");
+    })
+</script>
+</body>
+</html>
